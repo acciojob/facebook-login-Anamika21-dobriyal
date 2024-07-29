@@ -1,8 +1,70 @@
 <html>
   <head>
     <title>Facebook Login</title>
+	  <style>
+		  body{
+			  background-color: #f6f6f6;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  height: 100vh;
+		  }
+		  .left{
+			  width: 450px;
+			  margin-top: 70px;
+			  display: inline-block;
+		  }
+		  .right{
+			  display: flex;
+			  width: 300px;
+			  background-color: white;
+			  padding: 20px;
+			  border-radius: 5px;
+			  box-shadow: 0 0 10px #ccc;
+			  flex-direction: column;
+			  gap: 10px;
+		  }
+		  input{
+			  border: 1px solid #ccc;
+			  border-radius: 5px;
+			  padding: 10px;
+			  margin: 10px;
+		  }
+		  .submit{
+			  background-color:  #1877f2;
+			  border-radius: 5px;
+			  padding: 10px 20px;
+			  width: 100%;
+			  margin: 8px;
+		  }
+		  .signup{
+			  background-color:  42b72a;
+			  border-radius: 5px;
+			  padding: 10px 20px;
+			  width: 100;
+			 margin: 8px;
+		  }
+		  a{
+			  text-decoration-line: none;
+			  color: #1877f2;
+		  }
+	  </style>
   </head>
   <body>
     <!-- Write your code here -->
+	  <div class="left">
+		  <img src="https://images.ctfassets.net/lzny33ho1g45/15B3NzGmwGTaC6EtKyhW7u/daa935a2a654bdf35f64919c03d4f0e8/facebook.jpg?w=1520&fm=avif&q=30&fit=thumb&h=760" width="300" height="150" alt="Facebook logo">
+		  <p>Facebook helps you connect and share with the people in your life.</p>
+	  
+	  </div>
+	  <div class="right">
+		  <form>
+			  <input type="text" id="email" placeholder="Email address or phone number">
+			  <input type="password" id="password" placeholder="Password">
+			  <button class="submit" type="submit">Log in</button>
+			  <a href="https://course.acciojob.com/open-web-editor?question=f7c08015-5514-4ea4-96f2-5ed6f4a69cf5">Forgotten account?</a>
+		  </form>
+		  <button class="signup">Create new account</button>
+	  </div>
   </body>
 </html>
